@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-recess/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-recess/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-recess/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-recess/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-recess/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-recess/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-recess/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-recess/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-recess/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-recess/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-recess/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-recess/build/coverage.html/index.html)
 
@@ -35,14 +35,36 @@
 ```json
 
 {
-    "name": "recess",
-    "description": "A simple, attractive code quality tool for CSS built on top of LESS",
-    "version": "1.1.9",
-    "author": "Jacob Thornton <jacob@twitter.com> (https://github.com/fat)",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/twitter/recess.git"
+    "author": {
+        "name": "Jacob Thornton",
+        "url": "https://github.com/fat"
     },
+    "bin": {
+        "recess": "./bin/recess"
+    },
+    "bugs": {
+        "url": "https://github.com/twitter/recess/issues"
+    },
+    "dependencies": {
+        "colors": ">= 0.3.0",
+        "less": "~1.3.0",
+        "nopt": ">= 1.0.10",
+        "underscore": ">= 1.2.1",
+        "watch": ">= 0.5.1"
+    },
+    "description": "A simple, attractive code quality tool for CSS built on top of LESS",
+    "devDependencies": {},
+    "directories": {
+        "bin": "./bin"
+    },
+    "dist": {
+        "shasum": "831c551f45df87d484c6123ffde91030bef1581a",
+        "tarball": "https://registry.npmjs.org/recess/-/recess-1.1.9.tgz"
+    },
+    "engines": {
+        "node": ">= 0.4.0"
+    },
+    "homepage": "http://twitter.github.com/recess",
     "keywords": [
         "css",
         "lint"
@@ -54,27 +76,26 @@
         }
     ],
     "main": "./lib",
-    "homepage": "http://twitter.github.com/recess",
-    "engines": {
-        "node": ">= 0.4.0"
-    },
-    "dependencies": {
-        "colors": ">= 0.3.0",
-        "nopt": ">= 1.0.10",
-        "underscore": ">= 1.2.1",
-        "watch": ">= 0.5.1",
-        "less": "~1.3.0"
-    },
-    "directories": {
-        "bin": "./bin"
+    "maintainers": [
+        {
+            "name": "fat"
+        },
+        {
+            "name": "jonschlinkert"
+        }
+    ],
+    "name": "recess",
+    "optionalDependencies": {},
+    "preferGlobal": true,
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/twitter/recess.git"
     },
     "scripts": {
         "test": "node test"
     },
-    "bin": {
-        "recess": "./bin/recess"
-    },
-    "preferGlobal": true
+    "version": "1.1.9"
 }
 ```
 
